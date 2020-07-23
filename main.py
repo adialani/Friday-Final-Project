@@ -19,37 +19,42 @@ if question1 != "boston":
 	gameover = True
 	print("wrong answer :(")
 	correctanswers +=0
+
 else:
 	print("good job!")
 	correctanswers +=1
 
 #2)
 question2 = input("\nWhat NBA team has won the most chapionships?: ")
-if question2 != "celtics":
-  gameover = True
-  print("wrong answer :( ")
+if question2 != "celtics" :
+	gameover = True
+	print("wrong answer :( ")
+	correctanswers +=0
 
 else:
-  print("good job! ")
-
+	print("good job! ")
+	correctanswers +=1
 
 #3)
 question3 = input("\nhow many teams are in the NBA?: ")
 if question3 != "30":
-  gameover = True
-  print("wrong answer :( ")
+	gameover = True
+	print("wrong answer :( ")
+	correctanswers +=0
 
 else:
-  print("good job! ")
-
+	print("good job! ")
+	correctanswers +=1
 
 #4)
 question4 = input("\nwho had the longest NBA career?: ")
 if question4 != "vince carter":
 	gameover = True
 	print("wrong answer :( ")
+	correctanswers +=0
 
 else:
 	print("good job! ")
+	correctanswers +=1
 
-print(f"you got {correctanswers}  right")
+	print(f"\nyou got {correctanswers}/4 right")
