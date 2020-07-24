@@ -5,7 +5,7 @@ def main():
 	gameover = False
 	while not gameover:
 		ask = input("\nDo you think your ready?: ")
-		if ask != "yes":
+		if ask != "yes" and ask != "y":
 			print("\nI guess you're not up for the challenge :(\nCome back when you're ready!")
 			return 0
 		else:
@@ -100,16 +100,25 @@ def main():
 			print("Good job!")
 			correctanswers +=1
 
-		
+		#10
+		question10 = input("\nQuestion 10 \nWhat NBA player has won the most championships?: ").lower()
+		if question10 != "bill russell":
+			print("Wrong answer :( ")
+			correctanswers +=0
+		else:
+			print("Good job!")
+			correctanswers +=1
+
+
 		if correctanswers < 5:
-			print("\nYou need to study harder ")
-		elif 4 < correctanswers < 8:
+			print("\nTry harder nect time ")
+		elif 4 < correctanswers < 9:
 			print("\nYou can do better ")
 		else:
 			print("\nGreat job! ")
 
 
-		print(f"You got {correctanswers} out of 9 questions correct")
+		print(f"You got {correctanswers} out of 10 questions correct")
 
 		choice = input("\nDo you want to play again (yes or no)?: ")
 		if choice != "yes" and choice != "y":
