@@ -9,7 +9,7 @@ def main():
 			print("\nI guess you're not up for the challenge :(\nCome back when you're ready!")
 			return 0
 		else:
-			print("LETS GET STARTED!")
+			print("\nLETS GET STARTED!")
 
 		correctanswers = 0
 
@@ -64,7 +64,7 @@ def main():
 			correctanswers +=1
 
 		#6
-		question6 = input("\nQuestion #6 \nWho has the record for the most 3's in a game? \na)Klay Thompson \nb)Steph Curry \nc)James Harde \n: ").lower()
+		question6 = input("\nQuestion #6 \nWho has the record for the most 3's in a game? \na)Klay Thompson \nb)Steph Curry \nc)James Harden \n: ").lower()
 		if question6 != "a":
 			print("Wrong answer :( ")
 			correctanswers +=0
@@ -92,7 +92,7 @@ def main():
 			correctanswers +=1
 
 		#9
-		question9 = input("\nQuestion #9 \nWhich NBA player only made one 3 point shot?: ").lower()
+		question9 = input("\nQuestion #9 \nWhich NBA player only made one 3 point shot in their whole carrer?: ").lower()
 		if question9 != "shaq" and question9 != "shaquille o'neal":
 			print("Wrong answer :( ")
 			correctanswers +=0
@@ -101,15 +101,15 @@ def main():
 			correctanswers +=1
 
 		
-		if correctanswers < 4:
-			print("\nYou might want to study harder ")
-		elif 3 < correctanswers < 7:
+		if correctanswers < 5:
+			print("\nYou need to study harder ")
+		elif 4 < correctanswers < 8:
 			print("\nYou can do better ")
 		else:
 			print("\nGreat job! ")
 
 
-		print(f"You got {correctanswers} out of 8 questions correct")
+		print(f"You got {correctanswers} out of 9 questions correct")
 
 		choice = input("\nDo you want to play again (yes or no)?: ")
 		if choice != "yes" and choice != "y":
